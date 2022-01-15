@@ -1,0 +1,9 @@
+@import "../../util/style/variables";
+.section {
+    background: $Color_Dashboard_bg;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}

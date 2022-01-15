@@ -1,0 +1,57 @@
+@import "../../util/style/components";
+@import "../../util/style/variables";
+.questionMapCard {
+    position: sticky;
+    width: 95%;
+    transition: top 200ms ease-in-out;
+    top: 6em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: $Color_Dashboard_bg;
+    border: 1px solid rgba(32, 40, 83, 0.1);
+    border-radius: 10px;
+    margin: 10px 2%;
+    > .questionMapCard__container {
+        .questionMapCard__container__heading:first-child {
+            margin-top: 10px;
+        }
+        .questionMapCard__container__heading {
+            > a {
+                text-decoration: none;
+                color: rgb(226, 226, 226);
+                text-transform: capitalize;
+            }
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        > .questionMapCard__container-sec1,
+        > .questionMapCard__container-sec2,
+        > .questionMapCard__container-sec3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+
+            > a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-weight: 600;
+                > div {
+                    @include center;
+                    margin: 5px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10px;
+                    background-color: rgb(22, 47, 71);
+                    box-shadow: rgba(63, 70, 77, 0.2) 0px 8px 24px;
+                }
+            }
+        }
+    }
+}
+.questionMapCard__Show {
+    top: 20px;
+}
+.questionMapCard__container__skeleton {
+    @include skeleton;
+}

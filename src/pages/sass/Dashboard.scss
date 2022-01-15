@@ -1,0 +1,37 @@
+@import "../../util/style/components";
+@import "../../util/style/fonts";
+@import "../../util/style/variables";
+
+.dashboard {
+    background: $Color_Dashboard_bg;
+    @include flexBox(row);
+    > .dashboard__container {
+        @include flexBox(row);
+        > .dashboard__sec {
+            @include flexBox(row);
+            > .dashboard__sec2 {
+                > .dashboard__sec__row1 {
+                    @include flexBox(row);
+                }
+                > .dashboard__sec__row2 {
+                    width: 100%;
+                }
+            }
+            > .dashboard__sec__paperlist {
+                color: rgb(235, 235, 235);
+                margin-left: 20px;
+                > h1 {
+                    margin-top: 10px;
+                    text-align: center;
+                }
+                > .dashboard__sec__paperlist__container {
+                    > a {
+                        text-decoration: none;
+                        color: rgb(219, 219, 219);
+                    }
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
